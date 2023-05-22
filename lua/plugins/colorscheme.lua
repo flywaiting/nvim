@@ -9,11 +9,12 @@ return {
 		enabled = false,
 	},
 	{
-		"neanias/everforest-nvim",
+		"sainnhe/everforest",
 		event = "VimEnter",
 		config = function()
 			vim.g.everforest_diagnostic_line_highlight = 1
-			require("everforest").setup()
+			vim.cmd.colorscheme("everforest")
+			vim.g.everforest_background = "soft"
 			vim.fn.sign_define({
 				{
 					name = "DiagnosticSignError",
