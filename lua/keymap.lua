@@ -9,7 +9,7 @@ map("n", "<c-left>", "<c-w>h", opt)
 map("n", "<c-right>", "<c-w>l", opt)
 map("n", "<leader>v", "<c-w>v", opt)
 map("n", "<leader>s", "<c-w>s", opt)
--- logic line and view line 
+-- logic line and view line
 map("n", "j", [[v:count ? 'j' : 'gj']], { noremap = true, expr = true })
 map("n", "k", [[v:count ? 'k' : 'gk']], { noremap = true, expr = true })
 
