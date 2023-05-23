@@ -16,6 +16,25 @@ return {
 		config = function()
 			local telescope = require("telescope")
 			telescope.setup({
+				defaults = {
+					sorting_strategy = "ascending",
+					path_display = "smart",
+					layout_strategy = "vertical",
+					layout_config = {
+						vertical = {
+							prompt_position = "top",
+							mirror = true,
+							-- height = 0.6,
+						}
+					}
+				},
+				pickers = {
+					find_files = {
+						-- theme = "dropdown",
+						previewer = false,
+						-- hidden = true,
+					},
+				},
 				extensions = {
 					fzf = {
 						fuzzy = true,

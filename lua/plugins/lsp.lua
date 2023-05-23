@@ -122,9 +122,9 @@ return {
 			require("mason-lspconfig").setup()
 			require("mason-lspconfig").setup_handlers({
 				function(server_name)
-					print(server_name)
 					require('lspconfig')[server_name].setup(opt)
 				end,
+				-- dedicated handler for specific servers
 				lua_ls = function()
 					require("lspconfig").lua_ls.setup(vim.tbl_extend("force", opt, {
 						settings = {
@@ -137,11 +137,6 @@ return {
 						},
 					}))
 				end,
-				-- dedicated handler for specific servers
-				-- use vim.tbl_extend("force", opt, {}) to merge config
-				-- ["rust_analyzer"] = function()
-				-- 	require("rust-tools").setup(opt)
-				-- end,
 			})
 		end,
 	},
