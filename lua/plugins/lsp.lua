@@ -16,7 +16,11 @@ return {
 				"glepnir/lspsaga.nvim",
 				-- event = "LspAttach",
 				config = function()
-					require("lspsaga").setup()
+					require("lspsaga").setup({
+						symbol_in_winbar = {
+							enable = false,
+						},
+					})
 				end,
 			},
 		},
@@ -116,7 +120,7 @@ return {
 				},
 			}
 			local opt = {
-				-- capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
+				capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 			}
 			require('mason').setup()
 			require("mason-lspconfig").setup()
@@ -126,6 +130,7 @@ return {
 				end,
 				-- dedicated handler for specific servers
 				lua_ls = function()
+					print("lua-config")
 					require("lspconfig").lua_ls.setup(vim.tbl_extend("force", opt, {
 						settings = {
 							Lua = {
