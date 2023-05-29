@@ -24,7 +24,6 @@ return {
 		},
 		config = function()
 			local luasnip = require("luasnip")
-			print("cmp-config")
 			-- nvim-cmp setup
 			local cmp = require("cmp")
 			-- https://github.com/hrsh7th/nvim-cmp/wiki/Advanced-techniques#add-parentheses-after-selecting-function-or-method-item

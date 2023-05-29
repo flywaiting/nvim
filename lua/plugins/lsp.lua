@@ -166,7 +166,7 @@ return {
 					null.builtins.diagnostics.eslint_d,
 					null.builtins.diagnostics.tsc,
 					null.builtins.diagnostics.ruff.with { extra_args = { "--max-line-length=180" } },
-					with_diagnostics_code(null.builtins.diagnostice.shellcheck),
+					-- with_diagnostics_code(null.builtins.diagnostice.shellcheck),
 					null.builtins.diagnostics.zsh,
 					null.builtins.code_actions.gitsigns.with { disabled_filetypes = { "NeogitCommitMessage" } },
 					null.builtins.code_actions.eslint_d,

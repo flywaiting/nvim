@@ -26,7 +26,15 @@ return {
 							mirror = true,
 							-- height = 0.6,
 						}
-					}
+					},
+					mappings = {
+						i = {
+							-- open in new buffer if not exit
+							["<cr>"] = function(bufnr)
+								require("telescope.actions.set").edit(bufnr, "tab drop")
+							end,
+						},
+					},
 				},
 				pickers = {
 					find_files = {
