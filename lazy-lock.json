@@ -10,6 +10,7 @@
   "everforest": { "branch": "master", "commit": "1db527e770deb8cbb3b5b60d8921f80bd2a4c12c" },
   "fidget.nvim": { "branch": "main", "commit": "0ba1e16d07627532b6cae915cc992ecac249fb97" },
   "friendly-snippets": { "branch": "main", "commit": "ef6547d2f586e08e071efeebac835e545f3015cc" },
+  "indent-blankline.nvim": { "branch": "master", "commit": "ceaf730b13e332cd76600d9795722413c236c684" },
   "lazy.nvim": { "branch": "main", "commit": "5f316cea4f0b5379e0094d6cfa5e1ee5e279f65a" },
   "lspkind.nvim": { "branch": "master", "commit": "57610d5ab560c073c465d6faf0c19f200cb67e6e" },
   "lspsaga.nvim": { "branch": "main", "commit": "01b9633aefd010f272d6c7e3d8293c44fcfe7696" },

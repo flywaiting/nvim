@@ -1,5 +1,16 @@
 return {
 	{
+		"lukas-reineke/indent-blankline.nvim",
+		event = "BufReadPre",
+		config = function()
+			vim.opt.list = true
+			require("indent_blankline").setup({
+				show_current_context = true,
+				-- show_current_context_start = true,
+			})
+		end
+	},
+	{
 		"akinsho/bufferline.nvim",
 		dependencies = "nvim-tree/nvim-web-devicons",
 		event = "VeryLazy",
