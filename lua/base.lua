@@ -4,6 +4,8 @@ vim.opt.swapfile = false
 
 local set = vim.o
 set.number = true
+set.numberwidth = 4
+set.signcolumn = "yes:1"
 set.relativenumber = true
 set.autoread = true
 set.mouse = "a"
