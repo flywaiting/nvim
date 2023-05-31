@@ -11,7 +11,15 @@ return {
 				"nvim-telescope/telescope-fzf-native.nvim",
 				build = "make",
 			},
-			"ahmedkhalf/project.nvim",
+			{
+				'nvim-telescope/telescope-project.nvim',
+			}
+			-- {
+			-- 	'ahmedkhalf/project.nvim',
+			-- 	config = function ()
+			-- 		require("project_nvim").setup()
+			-- 	end
+			-- },
 		},
 		config = function()
 			local telescope = require("telescope")
@@ -50,12 +58,20 @@ return {
 						override_file_sorter = true,
 						case_mode = "smart_case",
 					},
+					project = {
+						sync_with_nvim_tree = true,
+						hidden_files = true,
+						on_project_selected = function(prompt_bufnr)
+							require('telescope._extensions.project.actions').change_working_directory(prompt_bufnr, false)
+						end
+					}
 				},
 			})
 
 			-- extensions
 			telescope.load_extension("fzf")
-			telescope.load_extension("projects")
+			telescope.load_extension('project')
+			-- telescope.load_extension("projects")
 		end,
 	},
 }
