@@ -107,11 +107,12 @@ return {
 			})
 
 			local capabilities = vim.lsp.protocol.make_client_capabilities()
-			capabilities.textDocument.completion.completionItem.snippetSupport = true
+			-- for nvim-ufo
 			capabilities.textDocument.foldingRange = {
 				dynamicRegistration = false,
 				lineFoldingOnly = true,
 			}
+			capabilities.textDocument.completion.completionItem.snippetSupport = true
 			capabilities.textDocument.completion.completionItem.resolveSupport = {
 				properties = {
 					"documentation",
