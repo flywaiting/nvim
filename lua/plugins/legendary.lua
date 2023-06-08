@@ -7,6 +7,12 @@ local keymaps = {
 		description = 'show all commands',
 	},
 
+	-- telescope
+	{ '<c-r>', '<cmd>Telescope project<cr>', mode={'n', 'i'}, description='list and select a project'},
+	{ '<c-p>', '<cmd>Telescope find_files<cr>', mode={'n', 'i'}, description='find files'},
+	{ '<c-f>', '<cmd>Telescope live_grep<cr>', mode={'n', 'i'}, description='search for a string'},
+	{ '<f3>', '<cmd>Telescope current_buffer_fuzzy_find<cr>', mode={'n', 'i'}, description='search a string in current buffer'},
+
 	-- edit
 	{ '<a-enter>', '<esc>A', mode = { 'n', 'i' }, description = 'jump to end of line and edit' },
 

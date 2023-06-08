@@ -1,7 +1,9 @@
 return {
 	{
 		"nvim-tree/nvim-tree.lua",
-		cmd = { "NvimTreeToggle", "NvimTreeFindFile" },
+		-- keys = '<c-r>',
+		-- cmd = { "NvimTreeToggle", "NvimTreeFindFile" },
+		event = 'VeryLazy',
 		dependencies = "nvim-tree/nvim-web-devicons",
 		config = function()
 			vim.g.loaded_netrw = 1
@@ -16,8 +18,6 @@ return {
 					relativenumber = true,
 				},
 
-				-- telescope projects
-				-- sync_root_with_cwd = true,
 				respect_buf_cwd = true,
 				-- update_focused_file = {
 				-- 	enable = true,
