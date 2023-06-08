@@ -18,6 +18,7 @@ set.smartindent = true
 set.shiftwidth = 4
 set.tabstop = 4
 set.termguicolors = true
+set.ignorecase = true
 
 -- high light code when copy trigger
 vim.api.nvim_create_autocmd({ "TextYankPost" }, {
