@@ -10,7 +10,7 @@ return {
 	},
 	{
 		"sainnhe/everforest",
-		event = "VimEnter",
+		-- event = "VimEnter",
 		config = function()
 			vim.g.everforest_diagnostic_line_highlight = 1
 			vim.cmd.colorscheme("everforest")
