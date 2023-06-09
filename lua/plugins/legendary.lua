@@ -8,44 +8,39 @@ local keymaps = {
 	},
 
 	-- telescope
-	{ '<c-r>', '<cmd>Telescope project<cr>',    mode = { 'n', 'i' }, description = 'list and select a project' },
-	{ '<c-p>', '<cmd>Telescope find_files<cr>', mode = { 'n', 'i' }, description = 'find files' },
-	{
-		'<c-f>',
-		'<cmd>Telescope live_grep<cr>',
-		mode = { 'n', 'i' },
-		description =
-		'search for a string'
-	},
+	{ '<c-r>', '<cmd>Telescope project<cr>',     mode = { 'n', 'i' }, description = 'list and select a project' },
+	{ '<c-p>', '<cmd>Telescope find_files<cr>',  mode = { 'n', 'i' }, description = 'find files' },
+	{ '<c-f>', '<cmd>Telescope live_grep<cr>',   mode = { 'n', 'i' }, description = 'search for a string' },
+	{ '<a-f>', '<cmd>Telescope grep_string<cr>', mode = { 'n', 'i' }, description = 'search string under cursor' },
 	{
 		'<f3>',
 		'<cmd>Telescope current_buffer_fuzzy_find<cr>',
 		mode = { 'n', 'i' },
-		description =
-		'search a string in current buffer'
+		description = 'search a string in current buffer',
 	},
 
+	-- nvim tree
+	{ '<c-b>', '<cmd>NvimTreeFindFileToggle<cr>', mode = { 'n', 'i' }, description = "toggle file tree" },
+
 	-- edit
+	{ '<a-q>', '<cmd>qall<cr>',                   mode = { 'n', 'i' }, description = 'quit all' },
 	{
 		'<a-enter>',
 		'<esc>A',
 		mode = { 'n', 'i' },
-		description =
-		'jump to end of line and edit'
+		description = 'jump to end of line and edit',
 	},
 	{
 		'<a-w>',
 		'<cmd>bd<cr>',
 		mode = { 'n', 'i' },
-		description =
-		'close current buffer'
+		description = 'close current buffer',
 	},
 	{
-		'<a-s>',
-		'<cmd>w<cr>',
+		'<c-s>', -- a-s failed...
+		'<cmd>write<cr>',
 		mode = { 'n', 'i' },
-		description =
-		'save current buffer'
+		description = 'save current buffer',
 	},
 
 	{
@@ -91,4 +86,3 @@ return {
 -- map("n", "<c-f>", "<cmd>Telescope grep_string<cr>", opt)	-- search string under cursor or the visual selection
 -- map("n", "<c-f>", "<cmd>Telescope live_grep<cr>", opt)	-- search for a string
 -- more info https://github.com/nvim-telescope/telescope.nvim/blob/master/doc/telescope.txt
-

@@ -13,7 +13,5 @@ map("n", "<leader>s", "<c-w>s", opt)
 map("n", "j", [[v:count ? 'j' : 'gj']], { noremap = true, expr = true })
 map("n", "k", [[v:count ? 'k' : 'gk']], { noremap = true, expr = true })
 
-map({ "n", "i" }, "<c-b>", "<cmd>NvimTreeToggle<cr>", opt)
-map({ "n", "i" }, "<c-e>", "<cmd>NvimTreeFindFile<cr>", opt)
 
-map({ 'n', 'i' }, [[<c-s-p>]], '<esc>:', opt)
+-- map({ 'n', 'i' }, [[<c-s-p>]], '<esc>:', opt)
