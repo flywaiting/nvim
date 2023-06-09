@@ -1,6 +1,9 @@
 # nvim
 nvim personal config
 
-使用`lua`进行配置
+### todo
+- lualine
+- lsp for rust
 
-边摸索边配置
+### tips
+none
