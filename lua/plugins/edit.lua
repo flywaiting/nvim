@@ -85,7 +85,6 @@ return {
 	},
 	{
 		'fedepujol/move.nvim',
-		cmd = { 'MoveLine', 'MoveWord', 'MoveBlock'},
-
+		cmd = { 'MoveLine', 'MoveWord', 'MoveBlock' },
 	}
 }

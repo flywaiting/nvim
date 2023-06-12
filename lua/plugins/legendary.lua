@@ -1,17 +1,11 @@
 local keymaps = {
-	{
-		'<c-s-p>',
-		'<cmd>Legendary<cr>',
-		mode = { 'n', 'i' },
-		opts = { silent = true },
-		description = 'show all commands',
-	},
+	{ '<c-s-p>', '<cmd>Legendary<cr>',             mode = { 'n', 'i' }, description = 'show all commands' },
 
 	-- telescope
-	{ '<c-r>', '<cmd>Telescope project<cr>',     mode = { 'n', 'i' }, description = 'list and select a project' },
-	{ '<c-p>', '<cmd>Telescope find_files<cr>',  mode = { 'n', 'i' }, description = 'find files' },
-	{ '<c-f>', '<cmd>Telescope live_grep<cr>',   mode = { 'n', 'i' }, description = 'search for a string' },
-	{ '<a-f>', '<cmd>Telescope grep_string<cr>', mode = { 'n', 'i' }, description = 'search string under cursor' },
+	{ '<c-r>',   '<cmd>Telescope project<cr>',     mode = { 'n', 'i' }, description = 'list and select a project' },
+	{ '<c-p>',   '<cmd>Telescope find_files<cr>',  mode = { 'n', 'i' }, description = 'find files' },
+	{ '<c-f>',   '<cmd>Telescope live_grep<cr>',   mode = { 'n', 'i' }, description = 'search for a string' },
+	{ '<a-f>',   '<cmd>Telescope grep_string<cr>', mode = { 'n', 'i' }, description = 'search string under cursor' },
 	{
 		'<f3>',
 		'<cmd>Telescope current_buffer_fuzzy_find<cr>',
@@ -20,35 +14,22 @@ local keymaps = {
 	},
 
 	-- nvim tree
-	{ '<c-b>', '<cmd>NvimTreeFindFileToggle<cr>', mode = { 'n', 'i' }, description = "toggle file tree" },
+	{ '<c-b>',     '<cmd>NvimTreeFindFileToggle<cr>', mode = { 'n', 'i' }, description = "toggle file tree" },
 
 	-- edit
-	{ '<a-q>', '<cmd>qall<cr>',                   mode = { 'n', 'i' }, description = 'quit all' },
-	{
-		'<a-enter>',
-		'<esc>A',
-		mode = { 'n', 'i' },
-		description = 'jump to end of line and edit',
-	},
-	{
-		'<a-w>',
-		'<cmd>bd<cr>',
-		mode = { 'n', 'i' },
-		description = 'close current buffer',
-	},
-	{
-		'<c-s>', -- a-s failed...
-		'<cmd>write<cr>',
-		mode = { 'n', 'i' },
-		description = 'save current buffer',
-	},
+	{ '<a-q>',     '<cmd>qall<cr>',                   mode = { 'n', 'i' }, description = 'quit all' },
+	{ '<c-s>',     '<cmd>write<cr>',                  mode = { 'n', 'i' }, description = 'save current buffer' },
+	{ '<a-enter>', '<esc>A',                          mode = { 'n', 'i' }, description = 'edit at line end' },
+	{ '<c-enter>', '<esc>o',                          mode = { 'n', 'i' }, description = 'edit at new line below' },
+	{ '<s-enter>', '<esc>O',                          mode = { 'n', 'i' }, description = 'edit at new line above' },
+	{ '<a-w>',     '<cmd>bd<cr>',                     mode = { 'n', 'i' }, description = 'close current buffer' },
 
 	{
 		'<a-j>',
 		{
 			n = { '<cmd>MoveLine 1<cr>' },
 			i = { '<cmd>MoveLine 1<cr>' },
-			v = { '<cmd>MoveBlock 1<cr>' },
+			v = { ':MoveBlock 1<cr>' },
 		},
 		description = 'move down',
 	},
@@ -57,9 +38,25 @@ local keymaps = {
 		{
 			n = { '<cmd>MoveLine -1<cr>' },
 			i = { '<cmd>MoveLine -1<cr>' },
-			v = { '<cmd>MoveBlock -1<cr>' },
+			v = { ':MoveBlock -1<cr>' },
 		},
-		description = 'move down',
+		description = 'move up',
+	},
+	{
+		'<a-h>',
+		{
+			n = { ':MoveWord -1<cr>' },
+			i = { ':MoveWord -1<cr>' },
+		},
+		description = 'move word back',
+	},
+	{
+		'<a-l>',
+		{
+			n = { ':MoveWord 1<cr>' },
+			i = { ':MoveWord 1<cr>' },
+		},
+		description = 'move word ahead',
 	}
 }
 return {
