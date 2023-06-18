@@ -20,6 +20,8 @@ set.tabstop = 4
 set.termguicolors = true
 set.ignorecase = true
 
+vim.o.guifont = "Hack Nerd Font:h16"
+
 -- high light code when copy trigger
 vim.api.nvim_create_autocmd({ "TextYankPost" }, {
 	pattern = { "*" },
@@ -27,3 +29,8 @@ vim.api.nvim_create_autocmd({ "TextYankPost" }, {
 		vim.highlight.on_yank({ timeout = 500, })
 	end,
 })
+
+-- config for neovide
+if vim.g.neovide then
+	vim.g.neovide_input_macos_alt_is_meta = false
+end
