@@ -1,4 +1,4 @@
-local keymaps = {
+local baseKeymaps = {
 	{ '<c-s-p>', '<cmd>Legendary<cr>',             mode = { 'n', 'i' }, description = 'show all commands' },
 
 	-- telescope
@@ -59,12 +59,18 @@ local keymaps = {
 		description = 'move word ahead',
 	}
 }
+
 return {
 	'mrjones2014/legendary.nvim',
 	config = function()
-		require("legendary").setup({
-			keymaps = keymaps,
+		local legendary = require("legendary")
+		legendary.setup({
+			keymaps = baseKeymaps,
 		})
+
+		if vim.fn.has('mac') == 1 then
+			legendary.keymap({ '∑', '<cmd>bd<cr>', mode = { 'n', 'i' }, description = 'close buffer' })
+		end
 	end,
 	dependencies = {
 		'stevearc/dressing.nvim',

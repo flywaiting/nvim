@@ -131,7 +131,6 @@ return {
 				end,
 				-- dedicated handler for specific servers
 				lua_ls = function()
-					print("lua-config")
 					require("lspconfig").lua_ls.setup(vim.tbl_extend("force", opt, {
 						settings = {
 							Lua = {
