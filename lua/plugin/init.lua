@@ -9,6 +9,7 @@ if not vim.loop.fs_stat(lazypath) then
     lazypath,
   })
 end
+-- add to runtime path
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("plugins")
+require("lazy").setup("plugin.list")

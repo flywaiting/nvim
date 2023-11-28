@@ -1,6 +1,9 @@
 local opt = { noremap = true, silent = true }
 local map = vim.keymap.set
 
+map("n", "<c-b>", ":NvimTreeToggle<cr>", opt)
+map("i", "<c-b>", "<esc>:NvimTreeToggle<cr>", opt)
+
 -- window jump and split
 map("n", "<c-l>", "<c-w>l", opt)
 map("n", "<c-down>", "<c-w>j", opt)

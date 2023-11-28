@@ -1,5 +1,5 @@
 
 require("base")
 require("keymap")
-require("lazyPM")
+require("plugin")
 --
