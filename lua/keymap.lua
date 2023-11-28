@@ -1,29 +1,33 @@
-local opt = { noremap = true, silent = true }
-local map = vim.keymap.set
+local map = require("utils").map
 
-map("n", "<c-b>", ":NvimTreeToggle<cr>", opt)
-map("i", "<c-b>", "<esc>:NvimTreeToggle<cr>", opt)
 
-map("n", "<c-s>", ":w<cr>", opt)
-map("i", "<c-s>", "<esc>:w<cr>", opt)
+-- map("n", "<c-s>", ":w<cr>")
+map("in", "<c-s>", "<esc>:w<cr>")
 
-map("n", "sv", ":vsp<cr>", opt)
-map("n", "sh", ":sp<cr>", opt)
-map("n", "sc", "<c-w>c", opt)	-- close current 
-map("n", "so", "<c-w>o", opt)	-- close other
+map("n", "sv", ":vsp<cr>")
+map("n", "sh", ":sp<cr>")
+map("n", "sc", "<c-w>c")	-- close current 
+map("n", "so", "<c-w>o")	-- close other
 -- window jump
-map("n", "<c-down>", "<c-w>j", opt)
-map("n", "<c-up>", "<c-w>k", opt)
-map("n", "<c-left>", "<c-w>h", opt)
-map("n", "<c-right>", "<c-w>l", opt)
+map("n", "<c-down>", "<c-w>j")
+map("n", "<c-up>", "<c-w>k")
+map("n", "<c-left>", "<c-w>h")
+map("n", "<c-right>", "<c-w>l")
 
-map("n", "q", ":q<cr>", opt)
-map("n", "qq", ":q!<cr>", opt)
-map("n", "Q", ":qa!<cr>", opt)
+map("n", "q", ":q<cr>")
+map("n", "qq", ":q!<cr>")
+map("n", "Q", ":qa!<cr>")
+
+-- nvim tree
+map("in", "<c-b>", "<cmd>NvimTreeFindFileToggle<cr>")
+-- telescope
+map("ni", "<c-r>", "<cmd>Telescope project<cr>")
+map("ni", "<c-p>", "<cmd>Telescope find_files<cr>")
+map("ni", "<c-f>", "<cmd>Telescope live_grep<cr>")	-- search for a string
 
 -- logic line and view line
-map("n", "j", [[v:count ? 'j' : 'gj']], { noremap = true, expr = true })
-map("n", "k", [[v:count ? 'k' : 'gk']], { noremap = true, expr = true })
+-- map("n", "j", [[v:count ? 'j' : 'gj']], { noremap = true, expr = true })
+-- map("n", "k", [[v:count ? 'k' : 'gk']], { noremap = true, expr = true })
 
 
--- map({ 'n', 'i' }, [[<c-s-p>]], '<esc>:', opt)
+-- map({ 'n', 'i' }, [[<c-s-p>]], '<esc>:')

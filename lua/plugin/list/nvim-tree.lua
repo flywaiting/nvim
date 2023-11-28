@@ -3,7 +3,7 @@ return {
 		"nvim-tree/nvim-tree.lua",
 		-- event = "VeryLazy",
 		-- keys = "<c-b>",
-		cmd = "NvimTreeToggle",
+		cmd = "NvimTreeFindFileToggle",
 		dependencies = {
 			"nvim-tree/nvim-web-devicons",
 			"echasnovski/mini.base16",
