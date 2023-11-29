@@ -12,6 +12,8 @@ set.relativenumber = true
 set.swapfile = false
 
 set.wrap = false
+set.scrolloff = 5
+set.sidescroll = 5
 
 set.signcolumn = "yes:1"
 set.autoread = true
