@@ -20,14 +20,14 @@ return {
 			local telescope = require("telescope")
 			telescope.setup({
 				defaults = {
-					mappings =  {
-						i = {
-							["<cr>"] = function(bufnr)
-								-- open in new buffer if not exit
-								require("telescope.actions.set").edit(bufnr, "tab drop")
-							end,
-						},
-					},
+					-- mappings =  {
+					-- 	i = {
+					-- 		["<cr>"] = function(bufnr)
+					-- 			-- open in new buffer if not exit
+					-- 			require("telescope.actions.set").edit(bufnr, "tab drop")
+					-- 		end,
+					-- 	},
+					-- },
 					file_ignore_patterns = {
 						"node_modules",
 						"dist",
