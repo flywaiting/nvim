@@ -28,6 +28,12 @@ set.tabstop = 4
 set.termguicolors = true
 set.ignorecase = true
 
+set.foldcolumn = "1"
+set.foldlevel = 99
+set.foldlevelstart = 99
+set.foldenable = true
+set.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
+
 vim.o.guifont = "Hack Nerd Font:h16"
 
 -- high light code when copy trigger
