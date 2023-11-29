@@ -1,9 +1,6 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
-
 local set = vim.o
 set.number = true
 set.numberwidth = 4
@@ -19,7 +16,9 @@ set.signcolumn = "yes:1"
 set.autoread = true
 set.mouse = "a"
 set.hlsearch = true
-set.encoding = "utf8"
+set.encoding = "utf-8"
+set.fileencoding = "uft-8"
+
 set.clipboard = "unnamedplus"
 set.smartcase = true
 set.autoindent = true

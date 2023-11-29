@@ -1,5 +1,8 @@
 local map = require("utils").map
 
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
 map("in", "<c-enter>", "<esc>O")	-- new line above 
 
 -- map("n", "<c-s>", ":w<cr>")
