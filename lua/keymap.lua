@@ -1,5 +1,6 @@
 local map = require("utils").map
 
+map("in", "<c-enter>", "<esc>O")	-- new line above 
 
 -- map("n", "<c-s>", ":w<cr>")
 map("in", "<c-s>", "<esc>:w<cr>")
