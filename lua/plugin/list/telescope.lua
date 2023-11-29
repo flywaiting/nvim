@@ -1,3 +1,6 @@
+-- local build = "make"
+-- require cmake, build config
+-- cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build
 return {
 	{
 		"nvim-telescope/telescope.nvim",
