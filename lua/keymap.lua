@@ -22,6 +22,15 @@ map("n", "<c-right>", "<c-w>l")
 map("n", "qq", ":bd<cr>")
 map("n", "Q", ":qa!<cr>")
 
+-- < and >, for indent, with motion, like d,y so on
+
+-- move
+map("in", "<a-j>", "<cmd>MoveLine 1<cr>")
+map("in", "<a-k>", "<cmd>MoveLine -1<cr>")
+map("in", "<a-h>", "<cmd>MoveWord -1<cr>")
+map("in", "<a-l>", "<cmd>MoveWord 1<cr>")
+map("v", "<a-j>", "<cmd>MoveBlock 1<cr>")
+map("v", "<a-k>", "<cmd>MoveBlock -1<cr>")
 -- nvim tree
 map("in", "<c-b>", "<cmd>NvimTreeFindFileToggle<cr>")
 -- telescope

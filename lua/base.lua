@@ -46,5 +46,5 @@ vim.api.nvim_create_autocmd({ "TextYankPost" }, {
 
 -- config for neovide
 if vim.g.neovide then
-	vim.g.neovide_input_macos_alt_is_meta = false
+	vim.g.neovide_input_macos_alt_is_meta = true
 end
