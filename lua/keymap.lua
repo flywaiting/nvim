@@ -3,7 +3,9 @@ local map = require("utils").map
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-map("in", "<c-enter>", "<esc>O")	-- new line above 
+map("in", "<a-enter>", "<esc>O")	-- new line above 
+map("in", "<c-enter>", "<esc>o")	-- new line below
+map("in", "<c-bs>", "<esc>ciw")		-- del cursor word and insert
 
 -- map("n", "<c-s>", ":w<cr>")
 map("in", "<c-s>", "<esc>:w<cr>")
