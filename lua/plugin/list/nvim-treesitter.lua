@@ -1,3 +1,5 @@
+-- https://github.com/nvim-treesitter/nvim-treesitter/wiki/Windows-support
+-- need a compiler when install paser, and as all know windows hasn't default...
 return {
 	{
 		"nvim-treesitter/nvim-treesitter",
@@ -26,8 +28,8 @@ return {
 				incremental_selection = {
 					enable = true,
 					keymaps = {
-						-- init_selection = "<cr>",
-						init_selection = "gnn",
+						init_selection = "<cr>",
+						-- init_selection = "gnn",
 						node_incremental = "<cr>",
 						node_decremental = "<bs>",
 						scope_incremental = "<tab>",
@@ -35,8 +37,8 @@ return {
 				},
 			})
 
-			vim.opt.foldmethod = "expr"
-			vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+			-- vim.opt.foldmethod = "expr"
+			-- vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 		end,
 	},
 }
