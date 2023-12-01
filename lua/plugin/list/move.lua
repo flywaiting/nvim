@@ -1,8 +1,12 @@
 return {
 	{
 		"fedepujol/move.nvim",
-		enabled = false,
-		event = "BufRead",
-		-- opt = {},
+		cmd = {
+			"MoveLine",
+			-- "MoveHChar",
+			"MoveWord",
+			"MoveBlock",
+		},
+		opt = {},
 	},
 }

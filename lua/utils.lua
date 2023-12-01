@@ -7,6 +7,15 @@ local function map(mode, lhs, rhs)
 	end
 end
 
+local function altKey(key)
+	if (vim.fn.has("macunix")) then
+		return "<m-"..key..">"
+	else
+		return "<a-"..key..">"
+	end
+end
+
 return {
 	map = map,
+	altKey = altKey,
 }
