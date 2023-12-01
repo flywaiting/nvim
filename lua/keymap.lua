@@ -9,6 +9,7 @@ map("in", "<c-bs>", "<esc>ciw")		-- del cursor word and insert
 
 -- map("n", "<c-s>", ":w<cr>")
 map("in", "<c-s>", "<esc>:w<cr>")
+map("i", "<c-v>", '<esc>"+pa')
 
 map("n", "sv", ":vsp<cr>")
 map("n", "sh", ":sp<cr>")

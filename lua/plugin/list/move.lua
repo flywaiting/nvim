@@ -7,6 +7,5 @@ return {
 			"MoveWord",
 			"MoveBlock",
 		},
-		opt = {},
 	},
 }

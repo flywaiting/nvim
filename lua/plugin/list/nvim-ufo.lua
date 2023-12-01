@@ -1,3 +1,4 @@
+-- fold plugin like vscode
 return {
 	{
 		"kevinhwang91/nvim-ufo",
