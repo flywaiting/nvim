@@ -7,9 +7,6 @@ map("in", "<a-enter>", "<esc>O")	-- new line above
 map("in", "<c-enter>", "<esc>o")	-- new line below
 map("in", "<c-bs>", "<esc>ciw")		-- del cursor word and insert
 
-map("in", "<a-j>", "<cmd>move +1<cr>")		-- move line
-map("in", "<a-k>", "<cmd>move +1<cr>")		-- move line
-
 -- map("n", "<c-s>", ":w<cr>")
 map("in", "<c-s>", "<esc>:w<cr>")
 
@@ -29,13 +26,16 @@ map("n", "Q", ":qa!<cr>")
 
 -- < and >, for indent, with motion, like d,y so on
 
+-- comment
+map("in", "<c-/>", "<cmd>CommentToggle<cr>")
+map("v", "<c-/>", ":CommentToggle<cr>")
 -- move
 map("in", "<a-j>", "<cmd>MoveLine 1<cr>")
 map("in", "<a-k>", "<cmd>MoveLine -1<cr>")
 map("in", "<a-h>", "<cmd>MoveWord -1<cr>")
 map("in", "<a-l>", "<cmd>MoveWord 1<cr>")
-map("v", "<a-j>", "<cmd>MoveBlock 1<cr>")
-map("v", "<a-k>", "<cmd>MoveBlock -1<cr>")
+map("v", "<a-j>", ":MoveBlock 1<cr>")
+map("v", "<a-k>", ":MoveBlock -1<cr>")
 -- nvim tree
 map("in", "<c-b>", "<cmd>NvimTreeFindFileToggle<cr>")
 -- telescope
