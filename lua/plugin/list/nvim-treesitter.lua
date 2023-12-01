@@ -6,6 +6,7 @@ return {
 		event = "BufEnter",
 		dependencies = {
 			"JoosepAlviste/nvim-ts-context-commentstring",
+			-- "m-demare/hlargs.nvim",
 		},
 		build = function()
 			require("nvim-treesitter.install").update({ with_sync = true })()
@@ -36,6 +37,7 @@ return {
 					},
 				},
 			})
+			-- require("hlargs")
 
 			-- vim.opt.foldmethod = "expr"
 			-- vim.opt.foldexpr = "nvim_treesitter#foldexpr()"

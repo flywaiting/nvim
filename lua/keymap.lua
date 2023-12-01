@@ -7,6 +7,9 @@ map("in", "<a-enter>", "<esc>O")	-- new line above
 map("in", "<c-enter>", "<esc>o")	-- new line below
 map("in", "<c-bs>", "<esc>ciw")		-- del cursor word and insert
 
+map("in", "<a-j>", "<cmd>move +1<cr>")		-- move line
+map("in", "<a-k>", "<cmd>move +1<cr>")		-- move line
+
 -- map("n", "<c-s>", ":w<cr>")
 map("in", "<c-s>", "<esc>:w<cr>")
 
