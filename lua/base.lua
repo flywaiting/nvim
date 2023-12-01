@@ -28,7 +28,6 @@ set.tabstop = 4
 set.termguicolors = true
 set.ignorecase = true
 
-set.foldcolumn = "1"
 set.foldlevel = 99
 set.foldlevelstart = 99
 set.foldenable = true

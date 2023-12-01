@@ -2,7 +2,8 @@
 return {
 	{
 		"kevinhwang91/nvim-ufo",
-		event = "BufRead",
+		-- event = "BufRead",
+		keys = { "za", "zR", "zM" },
 		dependencies = {
 			"kevinhwang91/promise-async",
 			{
@@ -17,6 +18,7 @@ return {
                             { text = { builtin.lnumfunc, " " }, click = "v:lua.ScLa" },
                         },
                     })
+					vim.o.foldcolumn = "1"
                 end,
 			},
 		},
@@ -24,6 +26,7 @@ return {
 			require("ufo").setup({
 				provider_selector = function(bufnr, filetype, buftype)
 					return { "treesitter", "indent" }
+					-- return { "lsp", "treesitter", "indent" }
 				end,
 				-- fold_virt_text_handler = function, show info for fold range
 			})
