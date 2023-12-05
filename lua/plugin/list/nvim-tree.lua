@@ -1,3 +1,8 @@
+-- TODO: auto toggle node or jump to parent/child
+-- default keymap:
+-- 		e, base rename, without extension
+-- 		r, rename, with extension
+-- 		x p, move
 return {
 	{
 		"nvim-tree/nvim-tree.lua",
