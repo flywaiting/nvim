@@ -3,7 +3,8 @@ local map = require("utils").map
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-map("in", "<a-enter>", "<esc>O")	-- new line above 
+map("in", "<s-enter>", "<esc>O")	-- new line above 
+map("in", "<a-enter>", "<esc>A")	-- end of line
 map("in", "<c-enter>", "<esc>o")	-- new line below
 map("in", "<c-bs>", "<esc>ciw")		-- del cursor word and insert
 
@@ -23,7 +24,8 @@ map("n", "<c-left>", "<c-w>h")
 map("n", "<c-right>", "<c-w>l")
 
 -- map("n", "q", ":q<cr>")
-map("n", "qq", ":bd<cr>")
+-- map("n", "qq", ":bd<cr>")
+map("in", "<a-w>", "<esc>:bd<cr>")
 map("n", "Q", ":qa!<cr>")
 
 -- < and >, for indent, with motion, like d,y so on
