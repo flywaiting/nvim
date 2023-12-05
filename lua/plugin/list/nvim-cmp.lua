@@ -9,6 +9,7 @@ return {
 			"hrsh7th/cmp-path", 		-- source path
 			"hrsh7th/cmp-nvim-lua", 	-- source neovim api
 			"hrsh7th/cmp-nvim-lsp-signature-help", 	-- display function signatures
+			-- "lukas-reineke/cmp-rg",
 
 			"onsails/lspkind.nvim",
 
@@ -84,6 +85,7 @@ return {
 							luasnip = "[Snip]",
 							nvim_lsp_signature_help = "[Args]",
 							path = "[Path]",
+							-- rg = "[Rg]",
 							nvim_lua = "[Lua]"
 						}
 					}),
@@ -93,6 +95,7 @@ return {
 					{ name = "nvim_lsp_signature_help" },
 					{ name = "nvim_lua" },
 					{ name = "luasnip" },
+					-- { name = "rg" },
 					{ name = "path" },
 				}, {{ name = "buffer" }}),
 			})
