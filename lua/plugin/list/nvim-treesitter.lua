@@ -5,7 +5,6 @@ return {
 		"nvim-treesitter/nvim-treesitter",
 		event = "BufEnter",
 		dependencies = {
-			"JoosepAlviste/nvim-ts-context-commentstring",
 			-- "m-demare/hlargs.nvim",
 		},
 		build = function()
