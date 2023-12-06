@@ -18,7 +18,7 @@ return {
                             { text = { builtin.lnumfunc, " " }, click = "v:lua.ScLa" },
                         },
                     })
-					vim.o.foldcolumn = "1"
+					vim.opt.foldcolumn = "1"
                 end,
 			},
 		},

@@ -1,7 +1,7 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
-local set = vim.o
+local set = vim.opt
 set.number = true
 set.numberwidth = 4
 set.relativenumber = true
@@ -33,7 +33,7 @@ set.foldlevelstart = 99
 set.foldenable = true
 -- set.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
 
-vim.o.guifont = "Hack Nerd Font:h16"
+vim.opt.guifont = "Hack Nerd Font:h16"
 
 -- high light code when copy trigger
 vim.api.nvim_create_autocmd({ "TextYankPost" }, {
