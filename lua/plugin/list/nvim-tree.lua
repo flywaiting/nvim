@@ -9,6 +9,7 @@ return {
 		-- event = "VeryLazy",
 		-- keys = "<c-b>",
 		cmd = "NvimTreeFindFileToggle",
+		enabled = false,
 		dependencies = {
 			"nvim-tree/nvim-web-devicons",
 			"echasnovski/mini.base16",

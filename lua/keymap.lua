@@ -41,11 +41,12 @@ map("in", "<a-l>", "<cmd>MoveWord 1<cr>")
 map("v", "<a-j>", ":MoveBlock 1<cr>")
 map("v", "<a-k>", ":MoveBlock -1<cr>")
 -- nvim tree
-map("in", "<c-b>", "<cmd>NvimTreeFindFileToggle<cr>")
+-- map("in", "<c-b>", "<cmd>NvimTreeFindFileToggle<cr>")
 -- telescope
 map("ni", "<c-r>", "<cmd>Telescope project<cr>")
 map("ni", "<c-p>", "<cmd>Telescope find_files<cr>")
 map("ni", "<c-f>", "<cmd>Telescope live_grep<cr>")	-- search for a string
+map("ni", "<c-b>", "<cmd>Telescope file_browser path=%:p:h<cr>")	-- file browser
 -- buffer line
 -- map("n", "db", ":bd<cr>")
 map("ni", "<c-tab>", "<esc>:BufferLineCycleNext<cr>")
