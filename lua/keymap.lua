@@ -22,6 +22,11 @@ map("n", "<c-down>", "<c-w>j")
 map("n", "<c-up>", "<c-w>k")
 map("n", "<c-left>", "<c-w>h")
 map("n", "<c-right>", "<c-w>l")
+-- resize window
+map("in", "<a-left>", "<esc>:vertical resize -2<cr>")
+map("in", "<a-right>", "<esc>:vertical resize +2<cr>")
+map("in", "<a-up>", "<esc>:resize -2<cr>")
+map("in", "<a-down>", "<esc>:resize +2<cr>")
 
 -- map("n", "q", ":q<cr>")
 -- map("n", "qq", ":bd<cr>")
