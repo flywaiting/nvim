@@ -7,6 +7,7 @@ nvim personal config
 -- legendary telescope 配置
 -- lazy opts 配置
 -- go to bracket 
+- tree sitter query语法 基于tree sitter可以实现很多的功能 前提是要会用啊。。。
 
 ### tips
 none
