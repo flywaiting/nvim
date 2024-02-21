@@ -1,5 +1,6 @@
 
 require("base")
 require("keymap")
-require("plugin")
+require("config.lazy")
+-- require("plugin")
 --
