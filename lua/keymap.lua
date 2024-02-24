@@ -36,8 +36,8 @@ map("n", "Q", ":qa!<cr>")
 -- < and >, for indent, with motion, like d,y so on
 
 -- comment
-map("in", "<c-/>", "<cmd>CommentToggle<cr>")
-map("v", "<c-/>", ":CommentToggle<cr>")
+-- map("in", "<c-/>", "<cmd>CommentToggle<cr>")
+-- map("v", "<c-/>", ":CommentToggle<cr>")
 -- move
 map("in", "<a-j>", "<cmd>MoveLine 1<cr>")
 map("in", "<a-k>", "<cmd>MoveLine -1<cr>")
@@ -48,10 +48,10 @@ map("v", "<a-k>", ":MoveBlock -1<cr>")
 -- nvim tree
 -- map("in", "<c-b>", "<cmd>NvimTreeFindFileToggle<cr>")
 -- telescope
-map("ni", "<c-r>", "<cmd>Telescope project<cr>")
-map("ni", "<c-p>", "<cmd>Telescope find_files<cr>")
-map("ni", "<c-f>", "<cmd>Telescope live_grep<cr>")	-- search for a string
-map("ni", "<c-b>", "<cmd>Telescope file_browser path=%:p:h<cr>")	-- file browser
+-- map("ni", "<c-r>", "<cmd>Telescope project<cr>")
+-- map("ni", "<c-p>", "<cmd>Telescope find_files<cr>")
+-- map("ni", "<c-f>", "<cmd>Telescope live_grep<cr>")	-- search for a string
+-- map("ni", "<c-b>", "<cmd>Telescope file_browser path=%:p:h<cr>")	-- file browser
 -- buffer line
 -- map("n", "db", ":bd<cr>")
 map("ni", "<c-tab>", "<esc>:BufferLineCycleNext<cr>")

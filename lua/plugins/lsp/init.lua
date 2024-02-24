@@ -2,6 +2,7 @@ return {
 	{
 		"williamboman/mason.nvim",
 		event = "VeryLazy",
+		enabled = false,
 		-- keys = "",	
 		dependencies = {
 			"williamboman/mason-lspconfig.nvim",
@@ -15,10 +16,10 @@ return {
 			mason_lspconfig.setup()
 
 			local lspconfig = require("lspconfig")
-			local default = require("plugin.list.lsp.configs.lang_default")
+			local default = require("plugins.lsp.configs.lang_default")
 			mason_lspconfig.setup_handlers({
 				function(server_name)
-					local status, config = pcall(require, "plugin.list.lsp.configs." .. server_name)
+					local status, config = pcall(require, "plugins.lsp.configs." .. server_name)
 					if not status then
 						lspconfig[server_name].setup(default)
 					else
