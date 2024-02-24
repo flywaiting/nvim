@@ -16,7 +16,7 @@ require("lazy").setup({
 		{ import = "plugins" },
 	},
 	install = {
-		-- colorscheme = { },
+		-- colorscheme = { "nordfox" },
 	},
 	custom_keys = {
 		["<c-s-p>"] = {
@@ -28,14 +28,14 @@ require("lazy").setup({
 	performance = {
 		rtp = {
 			disabled_plugins = {
-				"gzip",
+				-- "gzip",
 				-- "matchit",
 				-- "matchparen",
-				"netrwPlugin",
-				"tarPlugin",
-				"zipPlugin",
-				"tohtml",
-				"tutor",
+				-- "netrwPlugin",
+				-- "tarPlugin",
+				-- "zipPlugin",
+				-- "tohtml",
+				-- "tutor",
 			},
 		},
 	},

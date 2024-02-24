@@ -33,6 +33,8 @@ set.foldlevelstart = 99
 set.foldenable = true
 -- set.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
 
+set.laststatus = 3
+
 vim.opt.guifont = "Hack Nerd Font:h16"
 
 -- high light code when copy trigger
