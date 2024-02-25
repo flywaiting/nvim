@@ -4,7 +4,8 @@ return {
 	{
 		"nvim-treesitter/nvim-treesitter",
 		version = false,
-		event = "BufEnter",
+		event = "LazyFile",
+		-- event = "BufEnter",
 		init = function (plugin)
 			-- learn from lazyvim
 			require("lazy.core.loader").add_to_rtp(plugin)

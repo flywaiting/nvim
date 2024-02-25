@@ -1,6 +1,6 @@
 return {
 	"nvim-lualine/lualine.nvim",
-	event = "VeryLazy",
+	event = "UIEnter",
 	init = function ()
 		vim.g.lualine_laststatus = vim.o.laststatus
 		if vim.fn.argc(-1) > 0 then
@@ -29,7 +29,7 @@ return {
 				lualine_a = { "mode" },
 				lualine_b = { "branch" },
 				lualine_c = {
-					{ "filename" },
+					-- { "filename" },
 					{
 						"diagnostics",
 						symbols = {

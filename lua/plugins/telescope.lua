@@ -30,10 +30,12 @@ return {
 		},
 		keys = {
 			{ "<c-p>", "<cmd>Telescop find_files<cr>", mode = { "i", "n" }, desc = "Find Files" },
-			{ "<c-f>", "<cmd>Telescop live_grep<cr>", mode = { "i", "n" }, desc = "Search String" },
-			--{ "<c-r>", "<cmd>Telescop projects<cr>", mode = { "i", "n" }, desc = "Project" },
+			{ "<c-s-f>", "<cmd>Telescop live_grep<cr>", mode = { "i", "n" }, desc = "Search String" },
 			{ "<c-r>", "<cmd>Telescop project<cr>", mode = { "i", "n" }, desc = "Select Project" },
-		}, 
+			{ "<c-b>", "<cmd>Telescop buffers<cr>", mode = { "i", "n" }, desc = "Switch Buffers" },
+			{ '<c-f>', '<cmd>Telescope current_buffer_fuzzy_find<cr>', mode = { 'n', 'i' }, desc = 'Search String In Open Buffer' },
+			-- grep_string: search string under cursor
+		},
 		opts = {
 			defaults = {
 				sorting_strategy = "ascending",
