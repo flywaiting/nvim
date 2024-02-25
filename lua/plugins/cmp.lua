@@ -30,14 +30,14 @@ return {
 				end,
 			},
 
-			{
-				"windwp/nvim-autopairs",
-				config = function()
-					require("nvim-autopairs").setup({
-						check_ts = true,		-- tree sitter
-					})
-				end,
-			},
+			-- {
+			-- 	"windwp/nvim-autopairs",
+			-- 	config = function()
+			-- 		require("nvim-autopairs").setup({
+			-- 			check_ts = true,		-- tree sitter
+			-- 		})
+			-- 	end,
+			-- },
 		},
 		opts = function()
 			vim.api.nvim_set_hl(0, "CmpGhostText", { link = "Comment", default = true })
@@ -123,5 +123,11 @@ return {
 				sources = { { name = "buffer" } },
 			})
 		end,
+	},
+	{
+		"echasnovski/mini.pairs",
+		version = false,
+		event = "InsertEnter",
+		opts = {},
 	},
 }

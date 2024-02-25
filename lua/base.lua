@@ -37,6 +37,14 @@ set.fillchars = {
 	diff = "╱",
 	eob = " ",
 }
+set.foldcolumn = "1"
+set.foldlevel = 99
+set.foldlevelstart = 99
+set.foldenable = true
+set.foldmethod = "expr"
+set.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+set.foldtext = "v:lua.vim.treesitter.foldtext()"
+-- https://github.com/Wansmer/nvim-config/blob/main/lua/options.lua
 
 -- if vim.fn.has("nvim-0.10") == 1 then
 -- 	set.smoothscroll = true
