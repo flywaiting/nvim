@@ -23,7 +23,8 @@ map("n", "<c-up>", "<c-w>k")
 map("n", "<c-left>", "<c-w>h")
 map("n", "<c-right>", "<c-w>l")
 -- resize window
-map("in", "<a-left>", "<esc>:vertical resize -2<cr>")
+map("in", "<a-left>", "<cmd>vertical resize -2<cr>")
+-- map("in", "<a-left>", "<esc>:vertical resize -2<cr>")
 map("in", "<a-right>", "<esc>:vertical resize +2<cr>")
 map("in", "<a-up>", "<esc>:resize -2<cr>")
 map("in", "<a-down>", "<esc>:resize +2<cr>")
@@ -45,18 +46,8 @@ map("in", "<a-h>", "<cmd>MoveWord -1<cr>")
 map("in", "<a-l>", "<cmd>MoveWord 1<cr>")
 map("v", "<a-j>", ":MoveBlock 1<cr>")
 map("v", "<a-k>", ":MoveBlock -1<cr>")
--- nvim tree
--- map("in", "<c-b>", "<cmd>NvimTreeFindFileToggle<cr>")
--- telescope
--- map("ni", "<c-r>", "<cmd>Telescope project<cr>")
--- map("ni", "<c-p>", "<cmd>Telescope find_files<cr>")
--- map("ni", "<c-f>", "<cmd>Telescope live_grep<cr>")	-- search for a string
--- map("ni", "<c-b>", "<cmd>Telescope file_browser path=%:p:h<cr>")	-- file browser
--- buffer line
--- map("n", "db", ":bd<cr>")
-map("ni", "<c-tab>", "<esc>:BufferLineCycleNext<cr>")
-map("ni", "<s-tab>", "<esc>:BufferLineCyclePrev<cr>")
 
+map("in", "<c-s-p>", "<esc>:")
 -- logic line and view line
 -- map("n", "j", [[v:count ? 'j' : 'gj']], { noremap = true, expr = true })
 -- map("n", "k", [[v:count ? 'k' : 'gk']], { noremap = true, expr = true })
