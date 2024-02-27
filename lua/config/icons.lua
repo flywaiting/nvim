@@ -1,19 +1,23 @@
-  return {
-    misc = {
-      dots = "󰇘",
-    },
-    dap = {
-      Stopped             = { "󰁕 ", "DiagnosticWarn", "DapStoppedLine" },
-      Breakpoint          = " ",
-      BreakpointCondition = " ",
-      BreakpointRejected  = { " ", "DiagnosticError" },
-      LogPoint            = ".>",
-    },
+return {
+	prompt = {
+		cmdline = " ",
+		terminal = " ",
+	},
+	dap = {
+		Stopped             = { "󰁕 ", "DiagnosticWarn", "DapStoppedLine" },
+		Breakpoint          = " ",
+		BreakpointCondition = " ",
+		BreakpointRejected  = { " ", "DiagnosticError" },
+		LogPoint            = ".>",
+	},
+	misc = {
+		dots = "󰇘",
+	},
     diagnostics = {
-      Error = " ",
-      Warn  = " ",
-      Hint  = " ",
-      Info  = " ",
+    	Error = " ",
+    	Warn  = " ",
+    	Hint  = " ",
+    	Info  = " ",
     },
     git = {
       added    = " ",
