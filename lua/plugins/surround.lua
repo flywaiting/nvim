@@ -1,6 +1,6 @@
 return {
     "echasnovski/mini.surround",
-	event = "LazyFile",
+	-- event = "LazyFile",
 	opts = {
 		mappings = {
 			add = "<leader>sa", -- Add surrounding in Normal and Visual modes

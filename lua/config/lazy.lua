@@ -20,13 +20,13 @@ require("lazy").setup({
 	install = {
 		-- colorscheme = { "nordfox" },
 	},
-	custom_keys = {
-		["<c-s-p>"] = {
-			"<esc>:<cr>",
-			mode = { "i", "n" },
-			desc = "command",
-		},
-	},
+	-- custom_keys = {
+	-- 	["<c-s-p>"] = {
+	-- 		"<esc>:<cr>",
+	-- 		mode = { "i", "n" },
+	-- 		desc = "command",
+	-- 	},
+	-- },
 	performance = {
 		rtp = {
 			disabled_plugins = {
