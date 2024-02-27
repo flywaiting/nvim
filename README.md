@@ -12,3 +12,5 @@ nvim personal config
 ### tips
 none
 
+### 使用技巧
+1. 替换 `:[%]s/pattern/repalce/gciI` `%: 全文|当前行` `gciI: 行为标识`

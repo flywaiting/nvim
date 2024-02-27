@@ -15,6 +15,7 @@ return {
 
 			-- "onsails/lspkind.nvim",
 
+			-- native snippet next version 0.10.x
 			"saadparwaiz1/cmp_luasnip",
 			{
 				"L3MON4D3/LuaSnip",
